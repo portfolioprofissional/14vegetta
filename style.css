@@ -310,12 +310,15 @@ nav ul li a:hover {
     max-width: 84%;
 }
 
-/* Social grid and card styles */
-.social-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:18px;
-    align-items:stretch;
+    .about-text p,
+    .mission-card p,
+    .pillar-card p,
+    .content-card p,
+    .number-card p,
+    .social-card p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 }
 
 .social-card{
@@ -2073,6 +2076,23 @@ footer span {
         padding:0 3%;
     }
 
+    .menu-btn {
+        display:block;
+        width:50px;
+        height:50px;
+        border-radius:14px;
+        border:1px solid rgba(139,44,255,0.35);
+        background: rgba(139,44,255,0.16);
+        box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .menu-btn i {
+        font-size:24px;
+    }
+
     .hero {
         min-height:auto;
         padding-top: 70px;
@@ -2081,6 +2101,20 @@ footer span {
     .hero-content, .text-box{
         text-align:center;
         padding: 0 18px;
+    }
+
+    .text-box p,
+    .about-text p,
+    .mission-card p,
+    .pillar-card p,
+    .content-card p,
+    .number-card p,
+    .social-card p {
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .hero h1{
