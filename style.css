@@ -525,7 +525,11 @@ nav ul li a,
 
 
 .btn-primary { 
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    max-width:100%;
     margin-top:20px;
     padding:12px 30px;
     border-radius:28px;
@@ -535,6 +539,7 @@ nav ul li a,
     text-decoration:none;
     box-shadow: 0 10px 30px rgba(139,44,255,.25);
     transition: transform .25s ease, box-shadow .25s ease;
+    word-break: break-word;
 }
 
 .btn-primary:hover{
@@ -2155,6 +2160,14 @@ footer span {
 
     .hero-buttons a {
         width:100%;
+    }
+
+    .contact-box {
+        padding:30px 20px;
+    }
+
+    .hero-bg {
+        background-attachment: scroll;
     }
 
     section:not(.hero) .container{
