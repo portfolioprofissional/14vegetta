@@ -2113,8 +2113,18 @@ footer span {
         max-width:100%;
         margin-left:auto;
         margin-right:auto;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        hyphens: auto;
+    }
+
+    .mission-grid,
+    .pillars-grid,
+    .content-grid,
+    .numbers-grid,
+    .why-right,
+    .social-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero h1{
